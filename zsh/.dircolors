@@ -1,0 +1,5 @@
+#===========
+# DIRCOLORS
+#===========
+# make the colors displayed by ls be more visible against a dark background
+eval `dircolors ~/.dir_colors`

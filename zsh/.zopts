@@ -1,0 +1,39 @@
+#====================
+# CHANGE DIRECTORIES
+#====================
+# type the name of a directory to cd to it (if it's not a valid command)
+setopt AUTO_CD
+# resolve symbolic links when changing directory
+setopt CHASE_LINKS
+
+#=========
+# HISTORY
+#=========
+# multiple shells retain the same history (hell YES)
+# to access other shell's history, must press enter in already running shell
+setopt SHARE_HISTORY
+# save timestamps. use history -f to get date and time
+setopt EXTENDED_HISTORY
+# do not save consecutive repeated commands
+setopt HIST_IGNORE_DUPS
+# don't return items that were already found when reverse-searching history
+setopt HIST_FIND_NO_DUPS
+# oldest duplicates expire first
+setopt HIST_EXPIRE_DUPS_FIRST
+# remove superfluous blanks from history
+setopt HIST_REDUCE_BLANKS
+# add to history as soon as command is executed, rather than waiting until
+# the end of the session to write out to the history file
+setopt INC_APPEND_HISTORY
+# NOTE: must have SAVEHIST <= HISTSIZE, for unspecified reasons
+# http://zsh.sourceforge.net/Guide/zshguide02.html#l7
+HISTSIZE=1000000
+# number of lines to save in HISTFILE
+SAVEHIST=1000000
+HISTFILE=~/.zsh_history
+
+#=============
+# JOB CONTROL
+#=============
+# don't send HUP signal to running jobs when shell exits
+setopt NOHUP

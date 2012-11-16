@@ -1,0 +1,13 @@
+#====================
+# COMMAND LINE (ZLE)
+#====================
+# use emacs keybindings at prompt
+bindkey -e
+# no beeping at invalid commands
+unsetopt BEEP
+# remap M-h from run-help to Emacs backward delete word
+bindkey -r '\eh'
+bindkey '\eh' backward-delete-word
+# Remove period and forward slash from what is considered part of a word.
+# Makes editing with forward and backward delete word much easier.
+export WORDCHARS='*?_-[]~=&;!#$%^(){}<>'

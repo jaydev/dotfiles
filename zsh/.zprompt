@@ -1,0 +1,45 @@
+#========
+# PROMPT
+#========
+# Initialize colors.
+autoload -U colors
+colors
+
+# Allow for functions in the prompt.
+setopt PROMPT_SUBST
+
+## git prompt based off of
+## http://kriener.org/articles/2009/06/04/zsh-prompt-magic
+
+# set some colors
+for COLOR in RED GREEN YELLOW WHITE BLACK CYAN BLUE MAGENTA; do
+    eval PR_$COLOR='%{$fg[${(L)COLOR}]%}'
+    eval PR_BRIGHT_$COLOR='%{$fg_bold[${(L)COLOR}]%}'
+done
+PR_RESET="%{${reset_color}%}";
+
+# Need this to get git info
+autoload -Uz vcs_info
+
+# Set formats
+# %b - branchname
+# %a - action (e.g. rebase-i)
+# %r - repository name
+# for more vcs_info options,
+# see http://zsh.sourceforge.net/Doc/Release/User-Contributions.html#SEC273
+FMT_REPO="${PR_BRIGHT_BLUE}±${PR_RESET}|${PR_BRIGHT_BLUE}%r${PR_RESET}" # e.g. base
+FMT_BRANCH="${PR_BRIGHT_BLUE}%b${PR_RESET}" # e.g. master
+FMT_ACTION="${PR_BRIGHT_MAGENTA}%a${PR_RESET}%" # e.g. (rebase-i)
+
+zstyle ':vcs_info:*' enable git # only enable vcs_info for git
+zstyle ':vcs_info:*:prompt:*' actionformats "${FMT_REPO}|${FMT_BRANCH}|${FMT_ACTION}  "
+zstyle ':vcs_info:*:prompt:*' formats "${FMT_REPO}|${FMT_BRANCH} "
+
+function precmd {
+    vcs_info 'prompt'
+}
+
+# My prompt looks like
+# ±|repo|branch|actions hostname:$PWD:
+PS1='${vcs_info_msg_0_}'
+PS1+="${PR_BRIGHT_RED}%m${PR_RESET}|${PR_BRIGHT_YELLOW}%~${PR_RESET}: " # hostname:$PWD

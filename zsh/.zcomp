@@ -1,0 +1,36 @@
+#============
+# COMPLETION
+#============
+# added by new user install
+zstyle :compinstall filename '/Users/jaydevm/.zshrc'
+autoload -Uz compinit
+compinit
+
+# Git file completion in zsh is *really* slow. This is a fix to change it so
+# filenames will complete like they do normally.
+__git_files(){ _main_complete _files }
+
+# case-insensitive, partial-word and then substring completion
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
+# complete jobs/processes for the `kill` command
+zstyle ':completion:*:*:kill:*' verbose yes
+# cache results
+zstyle ':completion:*' use-cache on
+# ignore completion functions for commands you don’t have
+zstyle ':completion:*:functions' ignored-patterns '_*'
+
+# allow extended globbing, e.g. opposite ^*.txt, OR (foo|bar)*.txt, recursive **/*.txt
+setopt extended_glob
+# Don't require a leading dot for matching hidden files
+setopt glob_dots
+
+# quick change dirs (type ... and it turns into ../..)
+rationalise-dot() {
+  if [[ $LBUFFER = *.. ]]; then
+    LBUFFER+=/..
+  else
+    LBUFFER+=.
+  fi
+}
+zle -N rationalise-dot
+bindkey . rationalise-dot
