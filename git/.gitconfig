@@ -1,0 +1,74 @@
+[user]
+       name = Jaydev Mahadevan
+       email = jaydevm@gmail.com
+
+[color]
+       ui = auto
+       branch = auto
+       diff = auto
+       grep = auto
+       commit = normal
+       status = auto
+       frag = red
+       old = magenta
+       new = cyan
+       meta = green
+
+[color "diff"]
+       commit = red
+       frag = yellow
+       old = magenta
+       new = cyan
+       meta = green
+
+[color "grep"]
+       filename = green
+       linenumber = red
+       match = yellow
+
+[color "status"]
+       untracked = yellow
+
+[alias]
+       a = add
+       b = branch
+       c = commit
+       ca = commit --amend
+       ci = commit -a
+       co = checkout
+       d = diff
+       ds = diff --staged
+       h = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+       l = log
+       lme = log --author=jaydevm
+       m = merge
+       p = pull --rebase
+       praise = blame
+       r = reset
+       s = status
+       sm = submodule
+       st = stash
+       subup = submodule update
+
+[apply]
+       whitespace = strip
+
+[diff]
+       mnemonicprefix = true
+       renames = copies
+
+[diff "pdf"]
+       textconf = pdf2txt
+
+[grep]
+       lineNumber = true
+
+[core]
+       excludesfile = ~/.gitignore
+       editor = emacs --quick
+
+[push]
+       default = current
+
+[rerere]
+       enabled = true

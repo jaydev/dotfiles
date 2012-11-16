@@ -1,0 +1,10 @@
+--sort-files
+
+--color
+--color-filename=green
+--color-lineno=red
+
+# South migrations
+--ignore-dir=migrations
+# Rails code coverage report
+--ignore-dir=coverage

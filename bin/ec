@@ -1,0 +1,11 @@
+#!/bin/sh
+
+# Run emacs in a screen tab.
+#
+# As long as (server-start) is in .emacs, you can use ec foo to open things up instantly in the
+# original emacs window.
+#
+# This particular mode of operation is very handy for web dev when combined with jumpdir.
+# Use j bar to jump to a directory and ec foo to open a file in that directory with zero load time.
+#
+emacsclient -n "$@"

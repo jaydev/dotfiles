@@ -1,0 +1,5 @@
+#!/bin/sh
+
+# Port forward a local database to a remote one. Accepts the name of the
+# database server as the only argument.
+autossh -M 2000 -f -N -L 3333:"$@":5432 postgres@"$@"

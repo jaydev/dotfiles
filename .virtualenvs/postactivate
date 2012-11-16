@@ -1,0 +1,5 @@
+#!/usr/bin/env zsh
+# This hook is run after every virtualenv is activated.
+
+# Change the virtualenv prompt from white to bright, bold green.
+PS1="${PR_BRIGHT_GREEN}(`basename \"$VIRTUAL_ENV\"`) $_OLD_VIRTUAL_PS1"
