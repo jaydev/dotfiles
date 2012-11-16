@@ -2,7 +2,7 @@
 # COMPLETION
 #============
 # added by new user install
-zstyle :compinstall filename '/Users/jaydevm/.zshrc'
+zstyle :compinstall filename '$HOME/.zshrc'
 autoload -Uz compinit
 compinit
 
