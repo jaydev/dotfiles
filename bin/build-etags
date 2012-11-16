@@ -11,6 +11,4 @@
 echo Updating etags...
 ctags -f ~/base/site/TAGS -e -R --languages=python,javascript \
 ~/base/site/build/site-packages/django/ \
-~/base/site/counsyl/shared/ \
-~/base/site/counsyl/product/ \
 2> /dev/null &
