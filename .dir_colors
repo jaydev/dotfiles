@@ -103,3 +103,4 @@ EXEC 00;32  # files with execute permission
 .css 00;35
 .js 00;35
 .coffee 00;35
+.rb 00;35

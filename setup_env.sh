@@ -9,9 +9,8 @@ ln -fs $PWD/.ackrc \
     $PWD/zsh/.zshrc \
     $PWD/.ctags \
     $HOME
-ln -fs $PWD/git/pre-commit $HOME/base/.git/hooks
 if [ -d "$HOME/.ipython" ]; then
-    ln -fs $PWD/ipy_user_conf.py \
-        $PWD/ipythonrc \
+    ln -fs $PWD/python/ipy_user_conf.py \
+        $PWD/python/ipythonrc \
         $HOME/.ipython
 fi
