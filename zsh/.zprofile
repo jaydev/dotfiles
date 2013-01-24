@@ -13,11 +13,10 @@ fpath=(
 )
 
 path=(
-  $HOME/dotfiles/$USER/bin \
+  /usr/local/bin \
   /usr/local/git/bin \
   /usr/local/python/bin \
   /usr/local/share/python \
-  /usr/local/bin \
   /usr/local/sbin \
   /usr/texbin \
   /usr/bin \
