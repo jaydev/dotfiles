@@ -74,6 +74,9 @@ export VERSIONER_PYTHON_PREFER_32_BIT=yes
 # See ChangeLog within emacs.
 export EDITOR='emacs'
 export NODE_ENV=development
+# For colored BDD output
+export GHERKIN_COLORS='comments=white,bold:executing=blue'
+export TERM=xterm-256color
 
 #============
 # SSH

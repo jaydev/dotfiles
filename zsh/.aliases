@@ -4,14 +4,14 @@
 
 # Unix
 alias ackl='ack --pager="less -r"'
-alias em='emacs'
-alias emacs='emacs -nw'
+alias ec='/usr/local/Cellar/emacs/24.3/bin/emacsclient -n'
+alias em='open -a /Applications/Emacs.app $1'
 alias grepc='grep --color=always'
 alias -g L='| less'
 alias less='less -R'
 alias ll='ls -alrth --color'
 alias ls='ls -FGa --color'
-alias P='ps aux | grep'
+alias P='ps aux | grep --color'
 alias tm='tmux'
 alias tree='tree -C'
 
@@ -47,7 +47,7 @@ alias llsp='lssitepackages -alrth --color'
 alias mpy='./manage.py'
 alias py='python'
 alias pyg='pygmentize'
-alias python='python -W ignore::DeprecationWarning'
+alias python='python -W ignore'
 
 # Rails
 alias rc='bundle exec rails console'
