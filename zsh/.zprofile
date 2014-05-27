@@ -43,6 +43,12 @@ infopath=(
   /usr/lib/info \
 )
 
+# Zsh function paths
+fpath=(
+  $HOME/dotfiles/zsh/functions \
+	$fpath
+)
+
 # Remove duplicate entries from paths
 typeset -U fpath path manpath infopath
 

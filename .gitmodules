@@ -1,3 +1,6 @@
 [submodule "prelude"]
 	path = prelude
 	url = git://github.com/jaydev/prelude.git
+[submodule "pure"]
+	path = pure
+	url = https://github.com/sindresorhus/pure.git
