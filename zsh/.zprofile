@@ -7,12 +7,9 @@
 #=============
 # These paths will be typeset automatically.
 
-fpath=(
-  /usr/local/Cellar/zsh/4.3.11/share/zsh/site-functions \
-  /usr/local/Cellar/zsh/4.3.11/share/zsh/functions \
-)
-
 path=(
+  # Let GNU utils executables come first
+  /usr/local/opt/coreutils/libexec/gnubin \
   /usr/local/bin \
   /usr/local/git/bin \
   /usr/local/python/bin \
@@ -30,6 +27,8 @@ path=(
 )
 
 manpath=(
+  # Let GNU utils man pages come first
+  /usr/local/opt/coreutils/libexec/gnuman \
   /usr/local/share/man \
   /usr/share/man \
   /usr/local/git/share/man
@@ -58,7 +57,7 @@ export PYTHONPATH=$HOME:\
 $HOME/src
 # Python virtual environments
 export WORKON_HOME=$HOME/.virtualenvs
-source /usr/local/share/python/virtualenvwrapper.sh
+source /usr/local/bin/virtualenvwrapper.sh
 
 # Node.js
 export NODE_PATH=/usr/local/lib/node_modules
@@ -85,6 +84,12 @@ export TERM=xterm-256color
 if [ -x /usr/bin/ssh-add ]; then
   ssh-add $HOME/.ssh/id_dsa > /dev/null 2>&1
 fi
+
+#============
+# JAVA
+# ===========
+
+export JAVA_HOME=`/usr/libexec/java_home -v 1.7`
 
 #============
 # RUBY
