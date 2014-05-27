@@ -66,6 +66,7 @@
 [core]
        excludesfile = ~/.gitignore
        editor = emacs --quick
+       pager = less -x4
 
 [push]
        default = current

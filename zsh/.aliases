@@ -3,12 +3,13 @@
 #=========
 
 # Unix
-alias ackl='ack --pager="less -r"'
+alias ackl='ack --pager="less -r -x4"'
 alias ec='/usr/local/Cellar/emacs/24.3/bin/emacsclient -n'
 alias em='open -a /Applications/Emacs.app $1'
 alias grepc='grep --color=always'
 alias -g L='| less'
-alias less='less -R'
+alias -g LR='--pager="less -R"'  # for use with ack and ag
+alias less='less -R -x4'
 alias ll='ls -alrth --color'
 alias ls='ls -FGa --color'
 alias P='ps aux | grep --color'
