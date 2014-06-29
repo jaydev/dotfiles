@@ -104,3 +104,4 @@ EXEC 00;32  # files with execute permission
 .js 00;35
 .coffee 00;35
 .rb 00;35
+.scala 00;35
