@@ -16,7 +16,9 @@ if [ -d "$HOME/.ipython" ]; then
         $HOME/.ipython
 fi
 
-ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
+if [ ! -x "/usr/local/bin/brew" ]; then
+    ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
+fi
 brew install ack \
              autojump \
              coreutils \
