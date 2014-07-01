@@ -9,8 +9,24 @@ ln -fs $PWD/.ackrc \
     $PWD/zsh/.zshrc \
     $PWD/.ctags \
     $HOME
+
 if [ -d "$HOME/.ipython" ]; then
     ln -fs $PWD/python/ipy_user_conf.py \
         $PWD/python/ipythonrc \
         $HOME/.ipython
 fi
+
+ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
+brew install ack \
+             autojump \
+             coreutils \
+             curl \
+             findutils \
+             git \
+             node \
+             postgresql \
+             tmux \
+             tree \
+             wget \
+             zsh
+brew install emacs --cocoa --srgb
