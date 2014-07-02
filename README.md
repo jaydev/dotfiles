@@ -12,9 +12,9 @@ Mac Setup Instructions
 2. Install latest Java
 3. System Preferences settings
   * Swap control <--> caps lock and meta <--> option keys
-  * Enable Emacs keybindings and fast key repeat rate in KeyRemap4MacBook
   * Set bottom left and right corners to put the computer to sleep
-4. iTerm Settings
+4. Enable Emacs keybindings and fast key repeat rate in KeyRemap4MacBook
+5. iTerm Settings
   * Go to Preferences --> Profiles --> Keys --> change left and right option to send +Esc
   * Install Tomorrow Night Eighties theme from here: https://github.com/chriskempson/tomorrow-theme
-5. Run setup_env.sh
+6. Run setup_env.sh
