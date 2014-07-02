@@ -45,8 +45,8 @@ infopath=(
 
 # Zsh function paths
 fpath=(
-  $HOME/dotfiles/zsh/functions \
-	$fpath
+  $HOME/src/dotfiles/zsh/functions \
+  $fpath
 )
 
 # Remove duplicate entries from paths
@@ -63,7 +63,9 @@ export PYTHONPATH=$HOME:\
 $HOME/src
 # Python virtual environments
 export WORKON_HOME=$HOME/.virtualenvs
-source /usr/local/bin/virtualenvwrapper.sh
+if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then
+    source /usr/local/bin/virtualenvwrapper.sh
+fi
 
 # Node.js
 export NODE_PATH=/usr/local/lib/node_modules
