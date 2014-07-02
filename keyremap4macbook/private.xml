@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<root>
+    <appdef>
+	<appname>CHROME</appname>
+	<equal>com.google.Chrome</equal>
+    </appdef>
+
+    <appdef>
+	<appname>FIREFOX</appname>
+	<equal>org.mozilla.firefox</equal>
+    </appdef>
+
+    <item>
+	<name>Option+H to Backward Delete</name>
+	<identifier>private.option_h_to_backward_delete</identifier>
+	<autogen>
+	    __KeyToKey__
+	    KeyCode::H, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION,
+	    KeyCode::DELETE, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION,
+	</autogen>
+    </item>
+
+    <item>
+	<name>Ctrl+R to Previous Tab in Google Chrome</name>
+	<identifier>private.ctrl_r_to_previous_tab</identifier>
+	<only>CHROME</only>
+	<autogen>
+	    __KeyToKey__
+	    KeyCode::R, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL,
+	    KeyCode::BRACKET_LEFT, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT | MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND,
+	</autogen>
+    </item>
+
+    <item>
+	<name>Ctrl+T to Next Tab in Google Chrome</name>
+	<identifier>private.global.ctrl_t_to_next_tab</identifier>
+	<only>CHROME</only>
+	<autogen>
+	    __KeyToKey__
+	    KeyCode::T, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL,
+	    KeyCode::BRACKET_RIGHT, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT | MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND,
+	</autogen>
+    </item>
+
+    <item>
+	<name>Ctrl+I to New Tab in Google Chrome</name>
+	<identifier>private.global.ctrl_i_to_new_tab</identifier>
+	<only>CHROME</only>
+	<autogen>
+	    __KeyToKey__
+	    KeyCode::I, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL,
+	    KeyCode::T, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND,
+	</autogen>
+    </item>
+
+    <item>
+	<name>Ctrl+W to Close Tab in Google Chrome</name>
+	<identifier>private.global.ctrl_w_to_close_tab</identifier>
+	<only>CHROME</only>
+	<autogen>
+	    __KeyToKey__
+	    KeyCode::W, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL,
+	    KeyCode::W, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND,
+	</autogen>
+    </item>
+
+    <item>
+	<name>Ctrl+L to Open Location in Google Chrome</name>
+	<identifier>private.global.ctrl_l_to_open_location</identifier>
+	<only>CHROME</only>
+	<autogen>
+	    __KeyToKey__
+	    KeyCode::L, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL,
+	    KeyCode::L, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND,
+	</autogen>
+    </item>
+</root>
