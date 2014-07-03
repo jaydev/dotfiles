@@ -9,6 +9,7 @@ Mac Setup Instructions
   * iTerm2
   * KeyRemap4MacBook
   * Spotify
+  * Adium
 2. Install latest Java
 3. System Preferences settings
   * Swap control <--> caps lock and meta <--> option keys
