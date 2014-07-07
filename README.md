@@ -14,6 +14,9 @@ Mac Setup Instructions
 3. System Preferences settings
   * Swap control <--> caps lock and meta <--> option keys
   * Set bottom left and right corners to put the computer to sleep
+  * Enable tap with one finger to click
+  * Disable natural scroll direction
+  * Turn on FileVault
 4. Enable Emacs keybindings and fast key repeat rate in KeyRemap4MacBook
 5. iTerm Settings
   * Go to Preferences --> Profiles --> Keys --> change left and right option to send +Esc
