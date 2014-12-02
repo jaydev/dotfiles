@@ -1,5 +1,4 @@
 {
   "camelcase": true,
-  "sub": true,
-  "unused": true
+  "esnext": true
 }
