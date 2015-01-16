@@ -32,6 +32,7 @@ brew install ack \
              git \
              node \
              postgresql \
+             reattach-to-user-namespace \
              tmux \
              tree \
              wget \
