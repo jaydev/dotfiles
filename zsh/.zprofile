@@ -63,6 +63,7 @@ export PYTHONPATH=$HOME:\
 $HOME/src
 # Python virtual environments
 export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/src
 if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then
     source /usr/local/bin/virtualenvwrapper.sh
 fi
@@ -76,7 +77,6 @@ export NODE_PATH=/usr/local/lib/node_modules
 
 export TERM=xterm-256color  # Support for 256 colors
 export MANPAGER='less -R -S'  # Useful for manpages that contain ASCII markup
-export VERSIONER_PYTHON_PREFER_32_BIT=yes
 # This is used by git when doing "git commit -a" without the -m.
 # See ChangeLog within emacs.
 export EDITOR='emacs'
