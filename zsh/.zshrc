@@ -7,5 +7,4 @@ source $BASE_DIR/.zle
 source $BASE_DIR/.zopts
 source $BASE_DIR/.zprompt
 source $BASE_DIR/.dircolors
-source $BASE_DIR/.autojump
 source $BASE_DIR/.aliases

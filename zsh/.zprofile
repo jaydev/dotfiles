@@ -83,7 +83,6 @@ export EDITOR='emacs'
 export NODE_ENV=development
 # For colored BDD output
 export GHERKIN_COLORS='comments=white,bold:executing=blue'
-export TERM=xterm-256color
 
 #============
 # SSH
@@ -92,12 +91,6 @@ export TERM=xterm-256color
 if [ -x /usr/bin/ssh-add ]; then
   ssh-add $HOME/.ssh/id_dsa > /dev/null 2>&1
 fi
-
-#============
-# JAVA
-# ===========
-
-export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 
 #============
 # RUBY
