@@ -2,7 +2,22 @@ Mac Setup Instructions
 ========
 - Create a new SSH key: https://help.github.com/articles/generating-ssh-keys/
 - Homebrew
-  * Git
+  * git
+  * the_silver_searcher
+  * fasd
+  * emacs --with-cocoa (then brew linkapps emacs)
+  * findutils
+  * coreutils
+  * node
+  * postgresql
+  * python3
+  * reattach-to-user-namespace (for prior to OS X Yosemite)
+  * redis
+  * tmux
+  * tree
+  * wget
+  * curl
+  * zsh
 - Apps to download
   * Dropbox
   * 1Password
