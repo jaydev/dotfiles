@@ -99,3 +99,6 @@ fi
 # Load RVM into a shell session *as a function*
 # This must come last
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+
+## Set up fasd.
+eval "$(fasd --init auto)"
