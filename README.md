@@ -26,6 +26,7 @@ Mac Setup Instructions
   * iTerm2
   * Karabiner (formerly KeyRemap4MacBook)
   * Spotify
+  * Slack
 - System Preferences settings
   * Swap control <--> caps lock and meta <--> option keys
   * Set bottom left and right corners to put the computer to sleep
