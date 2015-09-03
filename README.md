@@ -5,9 +5,9 @@ Mac Setup Instructions
   * git
   * the_silver_searcher
   * fasd
-  * emacs --with-cocoa (then brew linkapps emacs)
-  * findutils
-  * coreutils
+  * emacs --with-cocoa (then `brew linkapps emacs`)
+  * findutils --with-default-names
+  * coreutils (follow instructions to use default names)
   * node
   * postgresql
   * python3
@@ -38,4 +38,4 @@ Mac Setup Instructions
 - iTerm Settings
   * Go to Preferences --> Profiles --> Keys --> change left and right option to send +Esc
   * Install Tomorrow Night Eighties theme from here: https://github.com/chriskempson/tomorrow-theme
-- Run setup_env.sh
+- Clone this repo and run setup_env.sh
