@@ -55,5 +55,3 @@ alias rs='bundle exec rails server'
 # Database
 alias mgd='mongod run --config /usr/local/Cellar/mongodb/1.8.2-x86_64/mongod.conf --logpath /usr/local/var/mongodb/mongo.log --fork'
 alias pg='pg_ctl -D $HOME/var/postgres/db -l $HOME/var/postgres/log/postgres.log'
-alias redis-start='launchctl start io.redis.redis-server'
-alias redis-stop='launchctl stop io.redis.redis-server'
