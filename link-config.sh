@@ -6,7 +6,6 @@ ln -fs $PWD/.dir_colors \
     $PWD/.tmux.conf \
     $PWD/git/.gitignore \
     $PWD/git/.gitconfig \
-    $PWD/bash/.bash_profile \
     $PWD/zsh/.zprofile \
     $PWD/zsh/.zshrc \
     $HOME
