@@ -26,7 +26,6 @@ Mac Setup Instructions
   * iTerm2
   * KeyRemap4MacBook
   * Spotify
-  * Adium
 - System Preferences settings
   * Swap control <--> caps lock and meta <--> option keys
   * Set bottom left and right corners to put the computer to sleep
