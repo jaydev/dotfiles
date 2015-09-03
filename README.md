@@ -29,6 +29,7 @@ Mac Setup Instructions
 - System Preferences settings
   * Swap control <--> caps lock and meta <--> option keys
   * Set bottom left and right corners to put the computer to sleep
+  * Set screensaver
   * Enable tap with one finger to click (if no Force Touch trackpad)
   * Disable natural scroll direction
   * Turn on FileVault
