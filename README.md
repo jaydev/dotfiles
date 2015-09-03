@@ -1,6 +1,8 @@
 Mac Setup Instructions
 ========
-
+- Create a new SSH key: https://help.github.com/articles/generating-ssh-keys/
+- Homebrew
+  * Git
 - Apps to download
   * Dropbox
   * 1Password
