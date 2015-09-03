@@ -59,8 +59,7 @@ typeset -U fpath path manpath infopath
 # See `man zshbuiltins` for more options.
 
 ## Python
-export PYTHONPATH=$HOME:\
-$HOME/src
+export PYTHONPATH=$HOME:$HOME/src
 # Python virtual environments
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/src

@@ -4,7 +4,7 @@
 
 # Unix
 alias ackl='ack --pager="less -r -x4"'
-alias ec='/usr/local/Cellar/emacs/24.3/bin/emacsclient -n'
+alias ec='/usr/local/Cellar/emacs/24.5/bin/emacsclient -n'
 alias em='open -a /Applications/Emacs.app $1'
 alias grepc='grep --color=always'
 alias -g L='| less'
