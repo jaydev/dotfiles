@@ -24,7 +24,7 @@ Mac Setup Instructions
   * Divvy
   * Google Chrome
   * iTerm2
-  * KeyRemap4MacBook
+  * Karabiner (formerly KeyRemap4MacBook)
   * Spotify
 - System Preferences settings
   * Swap control <--> caps lock and meta <--> option keys
