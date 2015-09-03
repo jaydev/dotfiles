@@ -34,9 +34,11 @@ Mac Setup Instructions
   * Enable tap with one finger to click (if no Force Touch trackpad)
   * Disable natural scroll direction
   * Turn on FileVault
-- Enable Emacs keybindings and fast key repeat rate in KeyRemap4MacBook
+- Keybindings
+  * Enable Emacs keybindings and fast key repeat rate in Karabiner
+  * Copy `karabiner/private.xml` to `/Applications/Karabiner.app/Contents/Resources/private.xml`
 - iTerm Settings
   * Go to Preferences --> Profiles --> Keys --> change left and right option to send +Esc
   * Install Tomorrow Night Eighties theme from here: https://github.com/chriskempson/tomorrow-theme
 - Clone this repo and run setup_env.sh
-- Install Pure ZSH prompt: https://github.com/sindresorhus/pure
+
