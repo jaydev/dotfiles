@@ -39,3 +39,4 @@ Mac Setup Instructions
   * Go to Preferences --> Profiles --> Keys --> change left and right option to send +Esc
   * Install Tomorrow Night Eighties theme from here: https://github.com/chriskempson/tomorrow-theme
 - Clone this repo and run setup_env.sh
+- Install Pure ZSH prompt: https://github.com/sindresorhus/pure
