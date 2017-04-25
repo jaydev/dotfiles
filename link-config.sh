@@ -11,6 +11,7 @@ ln -fs $PWD/.dir_colors \
     $HOME
 
 ln -fs $PWD/prelude $HOME/.emacs.d
+ln -fs $PWD/tmuxp $HOME/.tmuxp
 
 if [ -d "$HOME/.ipython" ]; then
     ln -fs $PWD/python/ipy_user_conf.py \
