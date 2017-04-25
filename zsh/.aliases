@@ -3,16 +3,17 @@
 #=========
 
 # Unix
-alias ackl='ack --pager="less -r -x4"'
+alias -g L='| less'
+alias -g LR='--pager="less -R"'  # for use with ack and ag
+alias P='ps aux | grep --color'
+alias agp='ag --pager="less -R"'
 alias ec='/usr/local/Cellar/emacs/24.5/bin/emacsclient -n'
 alias em='open -a /Applications/Emacs.app $1'
 alias grepc='grep --color=always'
-alias -g L='| less'
-alias -g LR='--pager="less -R"'  # for use with ack and ag
+alias j='z'
 alias less='less -R -x4'
 alias ll='ls -alrth --color'
 alias ls='ls -FGa --color'
-alias P='ps aux | grep --color'
 alias tm='tmux'
 alias tree='tree -C'
 
@@ -37,7 +38,6 @@ alias gs='git status'
 alias gst='git stash'
 
 # Python
-alias cq='codequality'
 alias ipy='ipython'
 # Alias ipython so it correctly imports python package paths set by a virtualenv
 # See http://scipy2010.blogspot.com/2010/06/scipy-2010-basic-tutorials-ipython-and.html
@@ -48,10 +48,10 @@ alias py='python'
 alias pyg='pygmentize'
 alias python='python -W ignore'
 
-# Rails
-alias rc='bundle exec rails console'
-alias rs='bundle exec rails server'
+# Ruby
+alias be='bundle exec'
+alias rc='rails console'
+alias rs='rails server'
 
 # Database
-alias mgd='mongod run --config /usr/local/Cellar/mongodb/1.8.2-x86_64/mongod.conf --logpath /usr/local/var/mongodb/mongo.log --fork'
 alias pg='pg_ctl -D $HOME/var/postgres/db -l $HOME/var/postgres/log/postgres.log'

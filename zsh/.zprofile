@@ -20,8 +20,7 @@ path=(
   /usr/java/bin \
   /usr/X11R6/bin \
   /usr/local/lib/node_modules/.bin \
-  $HOME/.rvm/bin \
-  $HOME/.gem/ruby/1.8/bin \
+  $HOME/.fastlane/bin/fastlane_lib \
   $path \
   . \
 )
@@ -71,7 +70,7 @@ fi
 export NODE_PATH=/usr/local/lib/node_modules
 
 #============
-# OTHER STUFF
+# OTHER VARIABLES
 # ===========
 
 export TERM=xterm-256color  # Support for 256 colors
@@ -84,20 +83,21 @@ export NODE_ENV=development
 export GHERKIN_COLORS='comments=white,bold:executing=blue'
 
 #============
+# RUBY
+# ===========
+
+# Allow the user to change ruby versions
+source /usr/local/opt/chruby/share/chruby/chruby.sh
+# Lets the shell auto-load the ruby version from a .ruby-version file
+source /usr/local/opt/chruby/share/chruby/auto.sh
+
+#============
 # SSH
 # ===========
 
 if [ -x /usr/bin/ssh-add ]; then
   ssh-add $HOME/.ssh/id_dsa > /dev/null 2>&1
 fi
-
-#============
-# RUBY
-# ===========
-
-# Load RVM into a shell session *as a function*
-# This must come last
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
 ## Set up fasd.
 eval "$(fasd --init auto)"
