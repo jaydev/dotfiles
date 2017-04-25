@@ -1,0 +1,32 @@
+session_name: mathbrix
+start_directory: ~/src/mathbrix
+windows:
+  - window_name: api
+    panes:
+      - shell_command:
+          - cd api
+          - workon mathbrix
+          - pg start
+          - ./manage.py runserver
+  - window_name: api
+    panes:
+      - shell_command:
+          - cd api
+          - workon mathbrix
+  - window_name: webapp
+    panes:
+      - shell_command:
+          - cd webapp
+          - ember server
+  - window_name: webapp
+    panes:
+      - shell_command:
+          - cd webapp
+  - window_name: game
+    panes:
+      - shell_command:
+          - cd game
+  - window_name: game
+    panes:
+      - shell_command:
+          - cd game/deploy
