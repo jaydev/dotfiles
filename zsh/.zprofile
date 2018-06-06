@@ -62,6 +62,7 @@ export PYTHONPATH=$HOME:$HOME/src
 # Python virtual environments
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/src
+export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
 if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then
     source /usr/local/bin/virtualenvwrapper.sh
 fi
