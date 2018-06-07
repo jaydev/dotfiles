@@ -5,14 +5,12 @@ windows:
     panes:
       - shell_command:
           - cd api
-          - workon mathbrix
           - pg start
-          - ./manage.py runserver
+          - mpy runserver
   - window_name: api
     panes:
       - shell_command:
           - cd api
-          - workon mathbrix
   - window_name: webapp
     panes:
       - shell_command:

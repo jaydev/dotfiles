@@ -42,8 +42,9 @@ alias ipy='ipython'
 # Alias ipython so it correctly imports python package paths set by a virtualenv
 # See http://scipy2010.blogspot.com/2010/06/scipy-2010-basic-tutorials-ipython-and.html
 alias ipython='python /usr/local/share/python/ipython'
-alias llsp='lssitepackages -alrth --color'
-alias mpy='./manage.py'
+alias mpy='pipenv run ./manage.py'
+alias pe='pipenv'
+alias per='pipenv run'
 alias py='python'
 alias pyg='pygmentize'
 alias python='python -W ignore'
